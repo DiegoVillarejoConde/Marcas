@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<horario>
+    <dia nombre="Lunes">
+        <clase>
+            <asignatura>IPE</asignatura>
+            <horaInicio>08:15</horaInicio>
+            <horaFin>10:15</horaFin>
+        </clase>
+        <clase>
+            <asignatura>Marcas</asignatura>
+            <horaInicio>10:45</horaInicio>
+            <horaFin>11:15</horaFin>
+        </clase>
+        <clase>
+            <asignatura>Base de datos</asignatura>
+            <horaInicio>11:45</horaInicio>
+            <horaFin>12:45</horaFin>
+        </clase>
+        <clase>
+            <asignatura>Digitalización</asignatura>
+            <horaInicio>13:45</horaInicio>
+            <horaFin>14:15</horaFin>
+        </clase>
+    </dia>
+    <dia nombre="Martes">
+        <clase>
+            <asignatura>Sostenibilidad</asignatura>
+            <horaInicio>08:15</horaInicio>
+            <horaFin>09:15</horaFin>
+        </clase>
+        <clase>
+            <asignatura>IPE</asignatura>
+            <horaInicio>09:15</horaInicio>
+            <horaFin>10:15</horaFin>
+        </clase>
+        <clase>
+            <asignatura>Marcas</asignatura>
+            <horaInicio>10:15</horaInicio>
+            <horaFin>12:45</horaFin>
+        </clase>
+        <clase>
+            <asignatura>Redes</asignatura>
+            <horaInicio>13:45</horaInicio>
+            <horaFin>14:45</horaFin>
+        </clase>
+    </dia>
+    <dia nombre="Miércoles">
+        <clase>
+            <asignatura>ISO</asignatura>
+            <horaInicio>08:15</horaInicio>
+            <horaFin>11:15</horaFin>
+        </clase>
+        <clase>
+            <asignatura>Base de datos</asignatura>
+            <horaInicio>12:45</horaInicio>
+            <horaFin>14:45</horaFin>
+        </clase>
+    </dia>
+    <dia nombre="Jueves">
+        <clase>
+            <asignatura>Base de datos</asignatura>
+            <horaInicio>08:15</horaInicio>
+            <horaFin>09:15</horaFin>
+        </clase>
+        <clase>
+            <asignatura>ISO</asignatura>
+            <horaInicio>09:15</horaInicio>
+            <horaFin>12:45</horaFin>
+        </clase>
+        <clase>
+            <asignatura>Redes</asignatura>
+            <horaInicio>12:45</horaInicio>
+            <horaFin>14:45</horaFin>
+        </clase>
+    </dia>
+    <dia nombre="Viernes">
+        <clase>
+            <asignatura>Hardware</asignatura>
+            <horaInicio>08:15</horaInicio>
+            <horaFin>11:15</horaFin>
+        </clase>
+        <clase>
+            <asignatura>Redes</asignatura>
+            <horaInicio>12:45</horaInicio>
+            <horaFin>13:45</horaFin>
+        </clase>
+        <clase>
+            <asignatura>ISO</asignatura>
+            <horaInicio>13:45</horaInicio>
+            <horaFin>14:45</horaFin>
+        </clase>
+    </dia>
+</horario>
