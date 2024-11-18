@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Ejemplo de mapa de imagen con map y area</h2>
+
+<!-- Imagen que utiliza un mapa de imagen -->
+<img src="sistema-solar.jpg" alt="Sistema Solar" usemap="#solarmap" width="500">
+
+<!-- Definición del mapa de imagen -->
+<map name="solarmap">
+  <!-- Área clicable en Mercurio -->
+  <area shape="circle" coords="80,80,20" href="https://es.wikipedia.org/wiki/Mercurio" alt="Mercurio">
+  
+  <!-- Área clicable en Venus -->
+  <area shape="circle" coords="150,100,20" href="https://es.wikipedia.org/wiki/Venus" alt="Venus">
+  
+  <!-- Área clicable en la Tierra -->
+  <area shape="circle" coords="220,120,20" href="https://es.wikipedia.org/wiki/Tierra" alt="Tierra">
+  
+  <!-- Puedes añadir más áreas para otros planetas -->
+</map>
+
+<p>Haz clic en los planetas de la imagen para obtener más información.</p>
+
+</body>
+</html>

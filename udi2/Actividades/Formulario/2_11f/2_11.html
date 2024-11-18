@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/encuesta-servicio" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre">
+        
+        <label for="valoracion">Valoración del servicio:</label>
+        <select id="valoracion" name="valoracion" required>
+            <option value="1">1 estrella</option>
+            <option value="2">2 estrellas</option>
+            <option value="3">3 estrellas</option>
+            <option value="4">4 estrellas</option>
+            <option value="5">5 estrellas</option>
+        </select>
+        
+        <label for="comentarios">Comentarios adicionales:</label>
+        <textarea id="comentarios" name="comentarios" placeholder="Opcional"></textarea>
+        
+        <label>
+            <input type="checkbox" name="recibir-mas-encuestas"> Permitir recibir más encuestas
+        </label>
+        
+        <button type="submit">Enviar Encuesta</button>
+    </form>
+    
+</body>
+</html>
