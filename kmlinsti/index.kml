@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Placemark>
+    <name>I.E.S. Gran Capitán</name>
+    <description>Instituto de Educación Secundaria en Córdoba, España. Departamento de informática</description>
+    <Point>
+      <coordinates>-4.75314256,37.89995193,0</coordinates>
+    </Point>
+  </Placemark>
+</kml>
