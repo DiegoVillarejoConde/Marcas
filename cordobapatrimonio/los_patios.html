@@ -1,32 +1,112 @@
 <!DOCTYPE html>
 <html lang="es">
-    <!--Cabecera-->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Córdoba ciudad Patrimonio">
     <meta name="keywords" content="Turismo, patrimonio, los patios">
-    <link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="favicon/android-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="favicon/android-icon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="favicon/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
     <title>Córdoba Ciudad Patrimonio</title>
-</head>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f4f8;
+            color: #333;
+        }
 
-<!--Cuerpo-->
+        /* Header */
+        header {
+            background-color: #5a6268;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Navigation - Flexbox */
+        nav {
+            background-color: #343a40;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+            transition: background 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #6c757d;
+            border-radius: 5px;
+        }
+
+        /* Main Content */
+        main {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        h2 {
+            text-align: center;
+            color: #343a40;
+            font-size: 1.8rem;
+        }
+
+        /* Grid Layout */
+        .contenedor {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        /* Section */
+        section {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
 <body>
     <header>
         <h1>Córdoba Ciudad Patrimonio</h1>
@@ -34,30 +114,30 @@
 
     <nav>
         <ul>
-        <li><a href="index.html" > Inicio</a> | </li>
-        <li><a href="mezquita.html" >La Mezquita </a> | </li>
-        <li><a href="casco_historico.html"> Casco Histórico</a>|  </li>
-        <li><a href="los_patios.html"> Los Patios </a>| </li>
-        <li><a href="medina_azahara.html"> Medina Azahara </a>| </li>
-        <li><a href="recorrido.html"> Recorrido Histórico</a>| </li>
-        <li><a href="contacto.html"> Contacto </a></li>
-    </ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="mezquita.html">La Mezquita</a></li>
+            <li><a href="casco_historico.html">Casco Histórico</a></li>
+            <li><a href="los_patios.html">Los Patios</a></li>
+            <li><a href="medina_azahara.html">Medina Azahara</a></li>
+            <li><a href="recorrido.html">Recorrido Histórico</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
     </nav>
+
     <main>
         <h2>Los Patios</h2>
-        <section>
-            <article>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio laborum illo eveniet, reprehenderit deleniti impedit numquam porro sapiente ea sequi totam? Mollitia, consequuntur deserunt sed ab labore nemo? Cumque, aperiam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error doloribus similique autem ad perspiciatis pariatur doloremque sit enim magnam vel. Sapiente aperiam deleniti repudiandae, aliquam dignissimos est consequuntur quia tenetur?</p>
-            </article>
-            <img src="./img/lospatios.jpg" alt="Los Patios" width="400" height="200">
-        </section>
+        <div class="contenedor">
+            <section>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio laborum illo eveniet, reprehenderit deleniti impedit numquam porro sapiente ea sequi totam? Mollitia, consequuntur deserunt sed ab labore nemo? Cumque, aperiam.</p>
+                <img src="./img/lospatios.jpg" alt="Los Patios">
+            </section>
+        </div>
         <a href="#top"><img src="../images/top.png" alt="Principio de página" width="48"></a>
     </main>
+
     <footer> 
-        <address> Córdoba, España</address>
-        <small>&copy; Todos los derechos... </small>  
-    
+        <address>Córdoba, España</address>
+        <small>&copy; Todos los derechos...</small>  
     </footer>
-        
-    </body>
-    </html>
+</body>
+</html>

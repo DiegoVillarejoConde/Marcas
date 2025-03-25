@@ -1,0 +1,14 @@
+<svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" fill="none">
+  <!-- Fondo -->
+  <rect width="300" height="300" fill="#F4E3C1"/>
+  
+  <!-- Arcos inspirados en la Mezquita-Catedral -->
+  <path d="M50 200 Q100 100, 150 200 T250 200" stroke="#A52A2A" stroke-width="15" fill="none"/>
+  <path d="M60 200 Q110 120, 140 200 T240 200" stroke="#E63946" stroke-width="10" fill="none"/>
+  
+  <!-- Base del puente romano -->
+  <rect x="60" y="210" width="180" height="20" fill="#8B5E3C"/>
+  
+  <!-- Tipografía -->
+  <text x="20" y="100" font-family="'Georgia', serif" font-size="30" fill="#6D4C41">Córdoba Patrimonio</text>
+</svg>

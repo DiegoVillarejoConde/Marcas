@@ -1,67 +1,131 @@
 <!DOCTYPE html>
 <html lang="es">
-    <!--Cabecera-->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Córdoba ciudad Patrimonio">
     <meta name="keywords" content="Turismo, patrimonio, viajes">
-    <link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="favicon/android-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
-<link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="96x96" href="favicon/android-icon-96x96.png">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-<link rel="manifest" href="favicon/manifest.json">
-<meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-<meta name="theme-color" content="#ffffff">
     <title>Córdoba Ciudad Patrimonio</title>
-</head>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f4f8;
+            color: #333;
+            display: grid;
+            grid-template-rows: auto auto 1fr auto;
+            min-height: 100vh;
+        }
 
-<!--Cuerpo-->
+        /* Header Styles */
+        header {
+            background-color: #5a6268;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Navigation Styles */
+        nav {
+            background-color: #343a40;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+            transition: background 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #6c757d;
+            border-radius: 5px;
+        }
+
+        /* Main Content Styles */
+        main {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        section {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        article {
+            text-align: justify;
+        }
+
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin: auto;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
 <body>
     <header>
-        <h1 title="Esto es un encabezado">Córdoba Ciudad Patrimonio</h1>
+        <h1>Córdoba Ciudad Patrimonio</h1>
     </header>
-
     <nav>
         <ul>
-        <li><a href="index.html" > Inicio</a> | </li>
-        <li><a href="mezquita.html" >La Mezquita </a> | </li>
-        <li><a href="casco_historico.html"> Casco Histórico</a>|  </li>
-        <li><a href="los_patios.html"> Los Patios </a>| </li>
-        <li><a href="medina_azahara.html"> Medina Azahara </a>| </li>
-        <li><a href="recorrido.html"> Recorrido Histórico</a>| </li>
-        <li><a href="contacto.html"> Contacto </a></li>
-    </ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="mezquita.html">La Mezquita</a></li>
+            <li><a href="casco_historico.html">Casco Histórico</a></li>
+            <li><a href="los_patios.html">Los Patios</a></li>
+            <li><a href="medina_azahara.html">Medina Azahara</a></li>
+            <li><a href="recorrido.html">Recorrido Histórico</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
     </nav>
-        <main>
+    <main>
+        <section>
             <h2>Contacto</h2>
-            <section>
-                <article>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati numquam deserunt nemo rem, alias amet consectetur nobis sapiente molestiae rerum odio a hic enim maiores reiciendis velit nihil error suscipit!</p>
-                </article>
-                <img src="./img/contacto.png" alt="Contacto" width="1200" height="300">
-            </section>
-        </main>
-    <a href="#top"><img src="../images/top.png" alt="Principio de página" width="48"></a>
-</main>
-<footer> 
-    <address> Córdoba, España</address>
-    <small>&copy; Todos los derechos... </small>  
-
-</footer>
+            <article>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit...</p>
+            </article>
+            <img src="./img/contacto.png" alt="Contacto">
+        </section>
+    </main>
+    <footer>
+        <address>Córdoba, España</address>
+        <small>&copy; Todos los derechos...</small>
+    </footer>
 </body>
 </html>
-    </body>
-    </html>
-    </body>
-    </html>

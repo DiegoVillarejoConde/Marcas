@@ -1,83 +1,186 @@
 <!DOCTYPE html>
 <html lang="es">
-    <!--Cabecera-->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Córdoba ciudad Patrimonio">
     <meta name="keywords" content="Monumentos, patrimonio, viajes, Córdoba">
-    <link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="favicon/android-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="favicon/android-icon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="favicon/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
     <title>Córdoba Ciudad Patrimonio</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+            display: grid;
+            grid-template-rows: auto auto 1fr auto;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            min-height: 100vh;
+        }
+
+        /* Header */
+        header {
+            background-color: #5a6268;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 2rem;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #343a40;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #6c757d;
+            border-radius: 5px;
+        }
+
+        /* Main Content */
+        main {
+            display: grid;
+            grid-template-columns: 1fr;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        section {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        article {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 20px;
+        }
+
+        article:last-child {
+            border-bottom: none;
+        }
+
+        h2, h3 {
+            text-align: center;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        /* Image Styling */
+        img {
+            display: block;
+            margin: 10px auto;
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* Responsive Design */
+        @media (min-width: 768px) {
+            main {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
+
+            section {
+                grid-column: span 2;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            main {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            section {
+                grid-column: span 3;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>Córdoba Ciudad Patrimonio</h1>
+    <header>
+        Córdoba Ciudad Patrimonio
+    </header>
+    
     <nav>
-            <a href="index.html" > Inicio</a> | <a href="mezquita.html" >La Mezquita </a> | <a href="casco_historico.html"> Casco Histórico</a>| <a href="los_patios.html"> Los Patios </a>| <a href="medina_azahara.html"> Medina Azahara </a>| <a href="recorrido.html"> Recorrido Histórico</a> | <a href="contacto.html"> Contacto </a></li>
-
+        <a href="index.html">Inicio</a> | 
+        <a href="mezquita.html">La Mezquita</a> | 
+        <a href="casco_historico.html">Casco Histórico</a> | 
+        <a href="los_patios.html">Los Patios</a> | 
+        <a href="medina_azahara.html">Medina Azahara</a> | 
+        <a href="recorrido.html">Recorrido Histórico</a> | 
+        <a href="contacto.html">Contacto</a>
     </nav>
-    <h2>Recorrido Histórico</h2>
-<section>
-    <article> 
-        <p>Existen una infinidad de recorridos para poder descubrir la extensa historia que esta maravillosa ciudad nos puede aportar Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto eligendi animi sed, iure sequi perferendis ab odio dolorum veniam optio earum blanditiis ad consequuntur eveniet, quo officia! Vel, quos nihil?  </p>
-        <p>Nuestro recorrido propuesto tiene un itinerario que se puede realizar sin utilizar ningun medio de transporte, ya que todos los monumentos que se visitarán se ubican en el <a href="casco_historico.html"> casco histórico</a>.</p>
-    </article>
-    <article>
-    <h3>1. Plaza de la Corredera</h3>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur eos suscipit earum harum eum quo saepe, excepturi adipisci placeat officia ipsa voluptatum qui vel quisquam obcaecati sit tempora nam voluptate?
-    </p>
-    <p>
-    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, reiciendis et! Sint perspiciatis alias suscipit perferendis doloribus! Nostrum nesciunt debitis fugiat molestias laboriosam facilis, sint accusantium quis, quod distinctio vero!
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum accusantium ipsam repellat consectetur assumenda obcaecati? Nobis quod eligendi amet beatae facilis. In nisi accusamus error sapiente aspernatur, minima sed corporis.
-    </p>
-    <img src="./img/plaza_corredera.jpg" alt="Plaza de la Corredera" width="400" height="200">
-    </article>
 
-    <article>
-        <h3>2. Sinagoga de Córdoba</h3>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat quis labore quas ipsam similique fuga, ratione facilis. Quasi quam maiores natus? Tenetur esse ad ut pariatur officia odio in ratione. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi commodi quae cum, debitis eos ducimus temporibus omnis quam impedit, inventore ea placeat, ab molestiae odio assumenda ut repudiandae! Libero, odio.
-        </p>
-        <img src="./img/sinagoga.jpg" alt="Sinagoga" width="400" height="250">
-    </article>
+    <main>
+        <section>
+            <h2>Recorrido Histórico</h2>
 
-    <article>
-        <h3>3. Mezquita-Catedral de Córdoba</h3>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa delectus corporis deleniti, dolorem maxime distinctio id tenetur consequuntur pariatur minima excepturi ex nihil aut enim amet nemo facere reiciendis quibusdam.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae dignissimos debitis amet tempore? Consequuntur a saepe hic, quod, unde, odio nobis vero assumenda soluta quaerat accusamus repellendus laborum enim doloribus.</p>
-        <img src="./img/mezquitadentro.jpg" alt="La Mezquita-Catedral por dentro" width="400" height="300">
-    </article>
+            <article>
+                <p>Dolor sit amet consectetur adipisicing elit...</p>
+            </article>
 
-    <article>
-        <h3>4. Puente Romano</h3>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa delectus corporis deleniti, dolorem maxime distinctio id tenetur consequuntur pariatur minima excepturi ex nihil aut enim amet nemo facere reiciendis quibusdam.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo optio error modi enim explicabo aliquam quasi similique esse commodi iusto sequi, sint atque fugit voluptates dolorem magnam consequuntur dignissimos sunt! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut commodi quae molestiae blanditiis ab itaque rerum quia expedita natus adipisci, voluptas magnam fugit, cumque quibusdam optio tempore deserunt. Molestias, suscipit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, maxime in, porro qui ipsa, quaerat cum repellat ipsum perspiciatis consequuntur eaque vitae voluptate natus voluptatibus perferendis nemo tempora dolorum itaque!</p>
-        <img src="./img/puenteromano.jpg" alt="Puente Romano" width="400" height="600">
-    </article>
+            <article>
+                <h3>1. Plaza de la Corredera</h3>
+                <p>Lorem ipsum dolor sit amet...</p>
+                <img src="./img/plaza_corredera.jpg" alt="Plaza de la Corredera">
+            </article>
 
-    <article>
-        <h3>5. Alcázar de los Reyes Cristianos</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo voluptates velit enim libero officiis. Animi ratione tenetur nostrum, vel quos quia provident aperiam deleniti voluptatem nihil minima, officiis accusantium. Consequuntur? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam suscipit in ducimus natus maxime neque quibusdam veniam veritatis molestias. Obcaecati beatae rerum maxime voluptatibus recusandae sapiente soluta? Veritatis, molestias sapiente. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque veritatis incidunt ducimus a quo, facere amet, inventore ipsam reiciendis non optio tempora. Perferendis cumque esse maiores molestiae labore, recusandae quidem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident amet non magnam esse quia, repudiandae odio ad laboriosam impedit facere asperiores culpa autem magni itaque saepe iusto minima quidem nemo.</p>
-        <img src="./img/alcazar.jpg" alt="Vistas del Alcázar de los Reyes Cristianos desde el patio" width="700" height="400">
-    </article>
-</section>
+            <article>
+                <h3>2. Sinagoga de Córdoba</h3>
+                <p>Lorem ipsum dolor sit amet...</p>
+                <img src="./img/sinagoga.jpg" alt="Sinagoga">
+            </article>
 
-    <aside>
-    </aside>
+            <article>
+                <h3>3. Mezquita-Catedral de Córdoba</h3>
+                <p>Lorem ipsum dolor sit amet...</p>
+                <img src="./img/mezquitadentro.jpg" alt="La Mezquita-Catedral">
+            </article>
+
+            <article>
+                <h3>4. Puente Romano</h3>
+                <p>Lorem ipsum dolor sit amet...</p>
+                <img src="./img/puenteromano.jpg" alt="Puente Romano">
+            </article>
+
+            <article>
+                <h3>5. Alcázar de los Reyes Cristianos</h3>
+                <p>Lorem ipsum dolor sit amet...</p>
+                <img src="./img/alcazar.jpg" alt="Alcázar de los Reyes Cristianos">
+            </article>
+        </section>
+    </main>
+
     <footer>
+        Córdoba, España &copy; 2024
     </footer>
 </body>
+</html>
