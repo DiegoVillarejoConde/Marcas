@@ -1,0 +1,177 @@
+::Pregunta 1::
+En un juego de rol (RPG), ¿cómo podrías usar XML para definir personajes?
+{
+=%33.33%Para almacenar información como nombre, estadísticas y habilidades.
+=%33.33%Para definir árboles de habilidades y progresión del personaje.
+=%33.33%Para establecer diálogos y misiones secundarias.
+~%0%Para renderizar modelos 3D.
+}
+
+::Pregunta 2::
+Un XML de un inventario en un juego de mundo abierto contiene
+{
+=Una estructura jerárquica con objetos, cantidad y atributos.
+~Solo imágenes de los ítems.
+~El código fuente del motor del juego.
+~Datos binarios encriptados.
+}
+
+::Pregunta 3::
+¿Qué ventaja tiene usar XML para definir niveles en un juego de plataformas?
+{
+=%50%Facilita la edición y creación de niveles por diseñadores sin tocar código.
+=%50%Permite cargar y modificar niveles sin recompilar el juego.
+~%0%Mejora la calidad gráfica del juego.
+~%0%Reduce el uso de memoria RAM.
+}
+
+::Pregunta 4::
+Si un NPC tiene diálogos almacenados en un XML y el archivo está mal formado, ¿qué podría suceder?
+{
+=Los diálogos no se cargarán correctamente o el juego puede fallar.
+~El NPC hablará en un idioma aleatorio.
+~El juego convertirá automáticamente el XML en JSON.
+~Nada, el XML se autocorrige.
+}
+
+::Pregunta 5::
+En un juego de estrategia, ¿cómo podría usarse un DTD?
+{
+=%50%Para definir la estructura de un XML con unidades, edificios y reglas de juego.
+=%50%Para validar que el XML de configuración de facciones siga el formato correcto.
+~%0%Para mejorar la inteligencia artificial de los enemigos.
+~%0%Para aumentar la velocidad de renderizado.
+}
+
+::Pregunta 6::
+En un XML que define eventos de un videojuego, ¿qué problema habría si un DTD no está bien diseñado?
+{
+=Podría permitir datos inconsistentes o incompletos, causando errores en el juego.
+~El XML se convertiría en código ejecutable.
+~El juego generaría gráficos en baja resolución.
+~El motor de sonido dejaría de funcionar.
+}
+
+::Pregunta 7::
+¿Qué ventaja ofrece XML Schema sobre DTD en un juego de mundo abierto?
+{
+=%50%Permite definir tipos de datos más específicos, como enteros o booleanos.
+=%50%Se integra mejor con herramientas modernas de validación.
+~%0%Genera gráficos en tiempo real.
+~%0%Mejora el rendimiento del juego.
+}
+
+::Pregunta 8::
+En un XML que define las misiones de un juego de aventuras, ¿qué elemento usarías para agrupar objetivos secundarios?
+{
+=<subobjetivos>
+~<secundarias>
+~<metas>
+~<misión-secundaria>
+}
+
+::Pregunta 9::
+Un XML de configuración de enemigos en un shooter contiene atributos como "vida", "daño" y "velocidad". ¿Cómo garantizarías que estos valores sean correctos?
+{
+=%50%Usando XML Schema para definir tipos de datos.
+=%50%Validando el XML antes de cargarlo en el juego.
+~%0%Editando el XML en Paint.
+~%0%Escribiendo los valores en comentarios.
+}
+
+::Pregunta 10::
+Si un juego de supervivencia usa XML para definir recetas de crafteo, ¿qué ventaja tiene sobre JSON?
+{
+=Es más fácil de leer para diseñadores sin conocimientos de programación.
+~Se ejecuta más rápido que el código C++.
+~Genera gráficos 4K automáticamente.
+~Permite compresión de texturas.
+}
+
+::Pregunta 11::
+En un DTD de habilidades de personaje, ¿cómo definirías que cada habilidad debe tener un nombre y un costo de maná?
+{
+=<!ELEMENT habilidad (nombre, costoMana)>
+~<!ELEMENT habilidad [nombre, costoMana]>
+~<!HABILIDAD nombre costoMana>
+}
+
+::Pregunta 12::
+Un XML que define rutas de enemigos en un juego de terror tiene errores en su estructura. ¿Qué puede pasar?
+{
+=Los enemigos podrían moverse de forma errática o no aparecer.
+~El juego generaría gráficos más detallados.
+~Los enemigos serían más agresivos automáticamente.
+~El XML se corregiría solo en la siguiente actualización.
+}
+
+¿Qué ventaja tiene XML en la configuración de efectos de sonido en un videojuego?
+{
+=%50%Permite definir parámetros como volumen, duración y efectos especiales.
+=%50%Facilita la integración con motores de audio sin modificar código fuente.
+~%0%Mejora la calidad de los gráficos.
+~%0%Reduce el consumo de CPU del juego.
+}
+
+::Pregunta 14::
+¿Qué ventaja tiene XML en la configuración de inteligencia artificial en videojuegos?
+{
+=%50%Permite modificar comportamientos sin tocar el código del juego.
+=%50%Hace que las configuraciones sean más fáciles de leer y editar.
+~%0%Acelera el renderizado de sombras.
+~%0%Reduce el tamaño de las texturas.
+}
+
+::Pregunta 15::
+Si un juego usa XML para definir objetos en un mapa, ¿cómo podrías asegurarte de que cada objeto tiene una posición válida?
+{
+=Definiendo restricciones en XML Schema.
+~Escribiendo la posición en comentarios.
+~Dibujando la posición en un archivo TXT.
+~Editando el XML en un editor de imágenes.
+}
+
+::Pregunta 21::
+En un juego de peleas, ¿cómo podrías usar XML?
+{
+=%50%Para definir personajes, ataques y combos.
+=%50%Para almacenar configuraciones de torneos y reglas de combate.
+~%0%Para mejorar la calidad del sonido.
+~%0%Para aumentar la velocidad del renderizado.
+}
+
+::Pregunta 22::
+En un XML que almacena configuraciones de shaders en un juego, ¿qué podría pasar si tiene errores?
+{
+=El juego podría mostrar gráficos incorrectos o fallar al renderizar.
+~La música del juego dejaría de sonar.
+~El XML se corregiría automáticamente.
+~El juego funcionaría más rápido.
+}
+
+::Pregunta 23::
+¿Por qué usar XML en la personalización de personajes en un MMORPG?
+{
+=%50%Permite almacenar configuraciones como ropa, accesorios y colores.
+=%50%Facilita la carga de datos personalizados por los jugadores.
+~%0%Mejora la tasa de frames por segundo.
+~%0%Optimiza la conexión del servidor.
+}
+
+::Pregunta 24::
+¿Cómo podrías usar XML en la generación procedural de mapas?
+{
+=%50%Para definir reglas y parámetros de generación de terreno.
+=%50%Para almacenar configuraciones de biomas y estructuras.
+~%0%Para renderizar sombras en tiempo real.
+~%0%Para mejorar el rendimiento del procesador.
+}
+
+::Pregunta 25::
+En un juego de simulación, ¿para qué podrías usar XML?
+{
+=%50%Para definir comportamientos de NPCs y eventos.
+=%50%Para almacenar configuraciones de físicas y mecánicas del juego.
+~%0%Para acelerar la conexión a internet.
+~%0%Para mejorar la calidad de las texturas.
+}

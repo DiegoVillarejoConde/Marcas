@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño CSS Grid</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    display: grid; 
+    grid-template-areas:
+        "header header header"
+        "nav article aside"
+        "footer footer footer";
+    grid-template-rows: 50px 1fr 50px; 
+    grid-template-columns: 20% 1fr 20%;
+    grid-gap: 5px;
+    height: 100vh;
+    margin: 0;
+}
+
+header, footer, article, nav, aside {
+    padding: 15px;
+    background: green;
+    color: white;
+    text-align: center;
+}
+
+#header { grid-area: header; }
+#footer { grid-area: footer; }
+#article { grid-area: article; }
+#nav { grid-area: nav; }
+#aside { grid-area: aside; }
+
+    </style>
+</head>
+<body>
+    <header id="header">Header</header>
+    <nav id="nav">Nav</nav>
+    <article id="article">Article</article>
+    <aside id="aside">Aside</aside>
+    <footer id="footer">Footer</footer>
+</body>
+</html>

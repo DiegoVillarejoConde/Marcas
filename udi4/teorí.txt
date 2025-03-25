@@ -1,0 +1,59 @@
+Prólogo : definicioón y declaración
+Ejemplrar: (El propio contenido de manera jerárquica) etiqueta de inicio, contenido, etiqueta final.
+<xml version="1.0" encoding ="UTF-8">
+<cine>
+<pelicula>
+
+    <hola> mundo </hola>
+
+
+</pelicula>
+
+<pelicula>
+
+    <hola> mundo </hola>
+
+
+</pelicula>
+</cine>
+
+
+1 todo elemento xml debe tener una nodo raiz. 2 y una de cierre. 3 los elementos xml deben estar correctamente anidados,
+4.sensible a mayuculas y minusculas. 5 los atributos en XML deben estr entre comillasdobles
+
+
+
+no pueden empex¡zar por ponto, ni contener xml ni tampoco contener espacios en blanco 
+
+para qie sea valido debe estar bien formado 
+
+para que sean válidos deben de ser documentos DTD XSC(permite una descripción más detallada)
+
+
+para saber si es valido utulizamos DTD (permite definir la estructura)
+
+XML sirve para: intercambiar información entre máquinas
+
+
+
+DTD:
+ELEMENTOS 
+ATRIBUTOS
+ENTIDADES 
+NOTACIONES
+
+elemento: 
+nombre del elemento y tipo de elemento 
+
+declarar atributos:
+attlist: nombre, atributo, tipo y valor por defecto
+
+entidad:(como una variable en programación)
+nombre entidad y valor
+
+Notaciones:
+
+(publicas y privadas)
++ uno o más
+* 0 o mñas
+? cero o uno

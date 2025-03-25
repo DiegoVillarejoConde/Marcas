@@ -1,0 +1,225 @@
+::Pregunta 1::
+¿Qué significa XML en el contexto de desarrollo de videojuegos?
+{
+=Extensible Markup Language
+~Extra Modern Language
+~Executable Markup Language
+~Expensive Modern Layout
+}
+
+::Pregunta 2::
+¿Para qué se usa XML en los videojuegos?
+{
+=%33.33%Para definir datos estructurados como configuraciones y niveles.
+=%33.33%Para almacenar diálogos de NPCs.
+=%33.33%Para representar datos de guardado.
+~%0%Para renderizar gráficos en 3D.
+}
+
+::Pregunta 3::
+¿Qué pasa si un archivo XML con configuraciones de un videojuego no está bien formado?
+{
+=El motor del juego no podrá leerlo correctamente y puede fallar.
+~El juego lo corregirá automáticamente.
+~El XML puede tener errores y seguirá funcionando.
+~El rendimiento del juego aumentará.
+}
+
+::Pregunta 4::
+¿Qué función tiene un DTD en XML dentro del desarrollo de videojuegos?
+{
+=Definir la estructura y reglas de un documento XML usado en el juego.
+~Transformar gráficos en 3D.
+~Optimizar el código del juego.
+~Acelerar la física en el motor gráfico.
+}
+
+::Pregunta 5::
+Si un archivo XML que define los niveles de un juego no cumple con su DTD, ¿qué sucede?
+{
+=No es válido y podría causar fallos en la carga del nivel.
+~El motor del juego lo corregirá automáticamente.
+~Se convierte en JSON.
+~No afecta al rendimiento del juego.
+}
+
+::Pregunta 6::
+¿Cuál de estos NO es un tipo de declaración en DTD para definir un XML en videojuegos?
+{
+~ELEMENT
+~ATTLIST
+=STYLE
+~ENTITY
+}
+
+::Pregunta 7::
+¿Para qué sirve XSL en el desarrollo de videojuegos?
+{
+=Para transformar y dar formato a documentos XML.
+~Para procesar texturas en 3D.
+~Para hacer consultas a bases de datos.
+~Para optimizar la memoria RAM del juego.
+}
+
+::Pregunta 8::
+¿Cuál de estos es un lenguaje relacionado con XML útil en la creación de misiones en videojuegos?
+{
+=XPath
+~DTD
+~HTML
+~CSS
+}
+
+::Pregunta 9::
+En un DTD para definir un archivo XML con configuraciones de IA enemiga, ¿qué símbolo se usa para definir una entidad?
+{
+=<!ENTITY>
+~<!ELEMENT>
+~<!DOCTYPE>
+~<?xml>
+}
+
+::Pregunta 10::
+¿Qué significa que un documento XML sea "bien formado" en un videojuego?
+{
+=Que cumple con las reglas de sintaxis XML y puede ser leído correctamente por el motor del juego.
+~Que contiene gráficos bien optimizados.
+~Que usa JSON Schema.
+~Que es válido según CSS.
+}
+
+::Pregunta 11::
+¿Cuál es la forma correcta de declarar XML en un archivo de configuración de un videojuego?
+{
+=<?xml version="1.0" encoding="UTF-8"?>
+~<xml version="1.0" encoding="UTF-8">
+~<!DOCTYPE xml>
+~<?XML 1.0>
+}
+
+::Pregunta 12::
+¿Qué etiqueta XML es incorrecta en un archivo de configuración de un personaje de videojuego?
+{
+~%33.33%<nombre>Héroe</nombre>
+~%33.33%<fuerza>90</fuerza>
+=%33.33%<habilidades> Lucha, Magia </habilidades>
+~%0%<clase>Guerrero</clase>
+}
+
+::Pregunta 13::
+¿Qué significa que un XML sea "válido" en el contexto de videojuegos?
+{
+=Que cumple con su DTD o XML Schema.
+~Que solo contiene números.
+~Que está optimizado para gráficos en 3D.
+~Que es compatible con JSON.
+}
+
+::Pregunta 14::
+¿Cuál es la diferencia entre XML y JSON en videojuegos?
+{
+=%50%XML es más legible y estructurado.
+=%50%JSON es más ligero y rápido.
+~%0%Son lo mismo, solo cambia la sintaxis.
+~%0%JSON es más difícil de leer que XML.
+}
+
+::Pregunta 15::
+¿Qué atributo de XML Schema define un atributo obligatorio en un XML que almacena objetos en un videojuego?
+{
+=use="required"
+~mandatory="true"
+~need="yes"
+~force="on"
+}
+
+::Pregunta 16::
+¿Cuál de estos códigos XML es correcto para definir un enemigo en un videojuego?
+{
+=<enemigo><nombre>Goblin</nombre><vida>100</vida></enemigo>
+~<enemigo><nombre>Orco<nombre><vida>200</vida></enemigo>
+~<enemigo><nombre>Dragón</vida></nombre></enemigo>
+~<enemigo><nombre>Esqueleto</nombre>
+}
+
+::Pregunta 17::
+En XML, los atributos deben ir...
+{
+=en comillas dobles o simples.
+~sin comillas, XML no las necesita.
+~entre paréntesis.
+~en mayúsculas.
+}
+
+::Pregunta 18::
+¿Qué archivo se usa para definir la estructura de un XML en un videojuego?
+{
+=%50%DTD
+=%50%XML Schema
+~%0%XSLT
+~%0%XPath
+}
+
+::Pregunta 19::
+¿Qué hace XSLT en XML dentro de un videojuego?
+{
+=Transforma un XML en otro formato útil para el motor del juego.
+~Verifica la validez de un XML.
+~Genera shaders para gráficos.
+~Convierte XML en código C++ automáticamente.
+}
+
+::Pregunta 20::
+¿Qué indica la siguiente declaración en un DTD dentro de un videojuego? <!ELEMENT objeto (nombre, tipo)>
+{
+=Que un elemento <objeto> debe contener <nombre> y <tipo> en ese orden.
+~Que <objeto> puede tener cualquier elemento dentro.
+~Que <objeto> es un atributo de <nombre> y <tipo>.
+~Que <objeto> es opcional.
+}
+
+::Pregunta 21::
+¿Cuál de los siguientes es un beneficio de usar XML en videojuegos?
+{
+=Es independiente del motor gráfico.
+~Solo funciona con Unity.
+~Requiere un software específico para leerlo.
+~No puede usarse en bases de datos.
+}
+
+::Pregunta 22::
+¿Qué elemento XML es correcto para definir una misión en un RPG?
+{
+=<misión nombre="Derrotar al dragón"/>
+~<misión nombre=Derrotar al dragón>
+~<misión>nombre="Rescatar a la princesa"</misión>
+~<misión nombre="Recolectar 10 pociones"></misión>
+}
+
+::Pregunta 23::
+¿Cómo se define una entidad en un DTD para representar una moneda en un videojuego?
+{
+=<!ENTITY oro "100">
+~<!ENTITY name='oro' value="100">
+~<!ELEMENT oro "100">
+~<!ENTITY! oro = "100">
+}
+
+::Pregunta 24::
+¿Qué lenguaje permite validar XML además de DTD en un motor de videojuegos?
+{
+=%50%XML Schema
+=%50%Relax NG
+~%0%CSS
+~%0%XSLT
+~%0%HTML5
+}
+
+::Pregunta 25::
+¿Cuál es la forma correcta de definir un comentario en un XML de un videojuego?
+{
+=<!-- Esto es un comentario -->
+~<! Esto es un comentario !>
+~<? Esto es un comentario ?>
+~<-- Esto es un comentario -->
+}

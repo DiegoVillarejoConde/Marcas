@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<paises xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="paises.xsd">
+    <pais>
+        <nombre>Argentina</nombre>
+        <capital>Buenos Aires</capital>
+        <idioma>Español</idioma>
+        <moneda>Peso</moneda>
+    </pais>
+    <pais>
+        <nombre>Brasil</nombre>
+        <capital>Brasilia</capital>
+        <idioma>Portugués</idioma>
+        <moneda>Real</moneda>
+    </pais>
+    <pais>
+        <nombre>México</nombre>
+        <ciudad>Guadalajara</ciudad>
+        <ciudad>Monterrey</ciudad>
+        <ciudad>Cancún</ciudad>
+        <ciudad>Mérida</ciudad>
+        <ciudad>Ciudad de México</ciudad>
+    </pais>
+    <pais>
+        <nombre>Colombia</nombre>
+    </pais>
+</paises>

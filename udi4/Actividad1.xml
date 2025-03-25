@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!DOCTYPE nota [
+    <!ELEMENT nota (to,from,heading,body)>
+    <!ELEMENT to (#PCDATA)>
+    <!ELEMENT from (#PCDATA)>
+    <!ELEMENT heading (#PCDATA)>
+    <!ELEMENT body (#PCDATA)>
+]>
+<nota>
+<to>Mercedes</to>
+<from>Jose</from>
+<heading>Recordar</heading>
+<body>No olvides el cumpleaños de Andrés</body>
+</nota>

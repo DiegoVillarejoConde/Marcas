@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño Flexible</title>
+    <style>
+        /* Estilos generales */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Contenedor principal */
+        .flex-container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Elementos del layout */
+        header, footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .hero {
+            background-color: red;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .content {
+            background-color: green;
+            flex: 1;
+            padding: 20px;
+        }
+
+        .sidebar {
+            background-color: purple;
+            width: 320px;
+            padding: 20px;
+            color: white;
+        }
+
+        /* Diseño adaptable para pantallas grandes */
+        @media (min-width: 640px) {
+            .flex-container {
+                flex-direction: row;
+            }
+
+            .content {
+                flex: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>Main</header>
+    <div class="hero">Hero</div>
+
+    <div class="flex-container">
+        <section class="content">
+            <h2>Content</h2>
+            <p>Lorem ipsum dolor sit amet...</p>
+        </section>
+
+        <aside class="sidebar">
+            <h2>Sidebar</h2>
+            <p>Contenido adicional...</p>
+        </aside>
+    </div>
+
+    <footer>Footer</footer>
+
+</body>
+</html>

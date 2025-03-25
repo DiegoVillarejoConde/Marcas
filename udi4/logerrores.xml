@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE logs [
+    <!ELEMENT logs (log+)> 
+    <!ELEMENT log (fecha?, descripcion, archivo)>  
+    <!ATTLIST log 
+        categoria (Error | Advertencia | Información) #REQUIRED
+        id ID #IMPLIED>
+    <!ELEMENT fecha (#PCDATA)>
+    <!ELEMENT descripcion (#PCDATA)>
+    <!ELEMENT archivo (#PCDATA)>
+]>
+
+<logs>
+    <log categoria="Error" id="log1">
+        <fecha>2025-03-22</fecha>
+        <descripcion>El sistema no pudo acceder a la base de datos</descripcion>
+        <archivo>db_error.txt</archivo>
+    </log>
+
+    <log categoria="Advertencia" id="log2">
+        <fecha>2025-03-23</fecha>
+        <descripcion>El servidor está usando más del 90% de la RAM</descripcion>
+        <archivo>memory_warning.txt</archivo>
+    </log>
+
+    <log categoria="Información" id="log3">
+        <descripcion>El sistema se reinició correctamente</descripcion>
+        <archivo>system_restart.txt</archivo>
+    </log>
+
+    <log categoria="Error" id="log4">
+        <fecha>2025-03-24</fecha>
+        <descripcion>El servidor perdió conexión con el internet</descripcion>
+        <archivo>network_error.txt</archivo>
+    </log>
+</logs>
